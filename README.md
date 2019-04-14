@@ -6,4 +6,7 @@ Bypass captcha, but for this you will need an account on anti-captcha.com with t
 
 The average time to buy a item is 6.6 seconds.
 
+![Settings](https://github.com/mal-mel/supremebot/blob/master/readme_images/settings.png)
+![Order](https://github.com/mal-mel/supremebot/blob/master/readme_images/order.png)
+
 Run: python main.py
