@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="http://allfont.ru/allfont.css?fonts=courier-bold" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+
+	<style type="text/css">
+		html{
+			position: relative;
+  			min-height: 100%;
+  			overflow-y: auto;
+  			overflow-x: hidden; 
+		}
+
+		body{
+			background-color: #36393E;
+			margin-bottom: 60px;
+			font-family: 'Baloo Chettan', cursive;
+		}
+
+		.main{
+			width: 742px;
+			height: 425px;
+		}
+
+		.col-12{
+			background-color: #F40006;
+			height: 50px;
+		}
+
+		#button{
+			background-color: #F40006;
+			color: #FFFFFF;
+			outline: none !important;
+			box-shadow: none;
+		}
+
+		#list_button{
+			margin-top: 10px;
+		}
+
+		footer {
+		  position: relative;
+		  margin-top: 100px;
+		  bottom: 0;
+		  width: 100%;
+		  background-color: #36393E;
+		  height: 30px;
+		  font-size: 15px;
+		  
+		  margin-right: 15px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="container-fluid">
+			
+			<div class="row">
+
+				<div class="col-12">
+					<center>
+						<h1 style="color: #FFFFFF;">SUPREME BOT</h1>
+					</center>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-6">
+					<div class="btn-group dropright" id="list_button">
+	  					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="button">
+	    					Jackets
+	  					</button>
+		  				<div class="dropdown-menu">
+		    					
+    						{% for jacket in jackets %}
+    							<a class="dropdown-item" href="https://www.supremenewyork.com/shop/{{ jacket }}"> {{ jacket }} </a>
+    						{% endfor %}
+		    					
+		  				</div>
+					</div>
+				</div>
+
+				<div class="col-6">
+					<div class="btn-group dropleft" id="list_button" style="float: right; margin-right: 15px;">
+	  					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="button">
+	    					Sweatshirts
+	  					</button>
+		  				<div class="dropdown-menu">
+
+		    					
+    						{% for sweatshirt in sweatshirts %}
+    							<a class="dropdown-item" href="https://www.supremenewyork.com/shop/{{ sweatshirt }}"> {{ sweatshirt }}</a>
+    						{% endfor %}
+		    					
+		  				</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-6">
+					<div class="btn-group dropright" id="list_button">
+	  					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="button">
+	    					Pants
+	  					</button>
+		  				<div class="dropdown-menu">
+		    					
+    						{% for pant in pants %}
+    							
+    							<a class="dropdown-item" href="https://www.supremenewyork.com/shop/{{ pant }}"> {{ pant }}</a>
+
+    						{% endfor %}
+		    					
+		  				</div>
+					</div>
+				</div>
+
+				<div class="col-6">
+					<div class="btn-group dropleft" id="list_button" style="float: right; margin-right: 15px;">
+	  					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="button">
+	    					Accessories
+	  					</button>
+		  				<div class="dropdown-menu">
+		    					
+    						{% for accessory in accessories %}
+    							
+    							<a class="dropdown-item" href="https://www.supremenewyork.com/shop/{{ accessory }}"> {{ accessory }}</a>
+    							
+    						{% endfor %}
+		    					
+		  				</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-6">
+					<div class="btn-group dropright" id="list_button">
+	  					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="button">
+	    					Shirts
+	  					</button>
+		  				<div class="dropdown-menu">
+		    					
+    						{% for shirt in shirts %}
+    							
+    							<a class="dropdown-item" href="https://www.supremenewyork.com/shop/{{ shirt }}"> {{ shirt }}</a>
+    							
+    						{% endfor %}
+		    					
+		  				</div>
+					</div>
+				</div>
+
+				<div class="col-6">
+					<div class="btn-group dropleft" id="list_button" style="float: right; margin-right: 15px;">
+	  					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="button">
+	    					Tops Sweaters
+	  					</button>
+		  				<div class="dropdown-menu">
+		    					
+	    						{% for sweaters in tops_sweters %}
+	    							
+	    							<a class="dropdown-item" href="https://www.supremenewyork.com/shop/{{ sweaters }}"> {{ sweaters }}</a>
+	    							
+	    						{% endfor %}
+		    					
+		  				</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-6">
+					<div class="btn-group dropright" id="list_button">
+	  					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="button">
+	    					Bags
+	  					</button>
+		  				<div class="dropdown-menu">
+		    					
+    						{% for bag in bags %}
+    							
+    							<a class="dropdown-item" href="https://www.supremenewyork.com/shop/{{ bag }}"> {{ bag }}</a>
+    							
+    						{% endfor %}
+		    					
+		  				</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-6">
+					<div class="btn-group dropright" id="list_button">
+	  					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="button">
+	    					Hats
+	  					</button>
+		  				<div class="dropdown-menu">
+		    					
+    						{% for hat in hats %}
+    							<a class="dropdown-item" href="https://www.supremenewyork.com/shop/{{ hat }}"> {{ hat }}</a>
+    						{% endfor %}
+		    					
+		  				</div>
+					</div>
+				</div>
+
+			</div>
+
+			
+			<footer class="page-footer font-small blue">
+
+		  		<div class="footer-copyright text-center py-3" style="color: #F40006;">
+		  			
+		  			Developed by:
+		    		<a href="https://vk.com/mal_mel"> vk.com/mal_mel</a>
+	  			</div>
+
+			</footer>
+			
+
+		</div>
+	</div>
+	
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

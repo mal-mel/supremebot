@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time to drop</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+	<style type="text/css">
+		html{
+			position: relative;
+  			min-height: 100%;
+  			overflow: hidden;
+		}
+
+		body{
+			background-color: #36393E;
+			font-family: 'Baloo Chettan', cursive;
+		}
+
+		.main{
+			width: 251px;
+			height: 101px;
+			padding: 0;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<span style="color: #F40006; font-size: 20px;">Before the drop remains:</span>
+	
+		<span style="color: #FFFFFF"> DAYS: 
+			<span style="color: #F40006;">{{ time['days'] }}</span>
+		</span>
+		
+		<span style="color: #FFFFFF"> HOURS: 
+			<span style="color: #F40006;">{{ time['hours'] }}</span>
+		</span>
+
+		<span style="color: #FFFFFF"> MINUTES: 
+			<span style="color: #F40006;">{{ time['minutes'] }}</span>
+		</span>
+
+		<span style="color: #FFFFFF"> SECONDS: 
+			<span style="color: #F40006;">{{ time['seconds'] }}</span>
+		</span>
+	</div>
+</body>
+</html>
