@@ -10,3 +10,4 @@ The average time to buy a item is 6.6 seconds.
 ![Order](https://github.com/mal-mel/supremebot/blob/master/readme_images/order.png)
 
 Run: python main.py
+By the way, I know that this is a terrible code, but it works, sort of.
