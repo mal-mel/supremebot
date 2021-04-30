@@ -30,7 +30,7 @@ python-dateutil==2.8.0
 pytils==0.3
 pytz==2018.9
 requests==2.20.0
-rsa==4.1
+rsa==4.7
 ruamel.yaml==0.15.89
 scipy==1.0.0
 selection==0.0.14
